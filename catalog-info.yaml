@@ -1,0 +1,17 @@
+# catalog-info.yaml — repo myorg/frontend-login-sso
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: frontend-login-sso
+  title: Portal de Login (SSO)
+  description: Tela unificada de login da empresa (onde os usuários digitam email e senha).
+  tags: [react, frontend, sso]
+  annotations:
+    github.com/project-slug: myorg/frontend-login-sso
+spec:
+  type: website
+  lifecycle: production
+  owner: group:squad-identity
+  system: identity-access
+  consumesApis:
+    - openapi-autenticacao
